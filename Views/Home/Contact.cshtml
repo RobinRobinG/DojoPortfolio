@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="~/css/style.css"/>
+    <title>Contact Me!</title>
+  </head>
+  <body>
+    <div class="wrapper">
+        <div class="header">
+            <h1>My Portfolio</h1>
+            <div class="nav">
+                <a href="/">Home</a> |
+                <a href="/projects">Projects</a> |
+                <a href="/contact">Contact</a>
+            </div>
+        </div>
+        <h2>Contact Me</h2>
+        <form action="SubmitContact" method="POST">
+            <label>Name: </label>
+            <input type="text" name="name">
+            <label>Email: </label>
+            <input type="text" name="email">
+            <label>Message: </label>
+            <input type="text" name="message">
+            <button type="submit">Submit Contact</button>
+        </form>
+        <h1>ViewBag Info</h1>
+        <h1>@ViewBag.name</h1>
+        <h1>@ViewBag.email</h1>
+        <h1>@ViewBag.message</h1>
+    </div>
+  </body>
+</html>
